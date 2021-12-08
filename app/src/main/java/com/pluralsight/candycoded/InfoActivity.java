@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
+import java.net.URI;
 import java.util.ArrayList;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -51,6 +52,11 @@ public class InfoActivity extends AppCompatActivity {
 
     // ***
     // TODO - Task 3 - Launch the Phone Activity
+    public void createPhoneIntent(View view){
+        Intent  i=new Intent(Intent.ACTION_DIAL);
+        i.setData(Uri.parse("tel:0123456789"));
+        startActivity(i);
+    }
 
 
     // ***
