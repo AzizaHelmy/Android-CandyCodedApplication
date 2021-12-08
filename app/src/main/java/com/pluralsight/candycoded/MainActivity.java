@@ -89,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
     Intent infoIntent = new Intent(MainActivity.this, InfoActivity.class);
     startActivity(infoIntent);
     return super.onOptionsItemSelected(item);
-
   }
 
   // ***
